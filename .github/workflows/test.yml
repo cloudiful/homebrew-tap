@@ -15,8 +15,6 @@ jobs:
       - uses: actions/checkout@v7
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
-      - name: Tap this repository
-        run: brew tap cloudiful/tap "$GITHUB_WORKSPACE"
       - name: Audit
         run: brew audit --strict cloudiful/tap/phasegent
       - name: Install and test
