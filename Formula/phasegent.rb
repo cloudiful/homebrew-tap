@@ -1,7 +1,6 @@
 class Phasegent < Formula
   desc "Role-aware CLI for phase-oriented provider-backed workflows"
   homepage "https://github.com/cloudiful/phasegent"
-  version "2.12.16"
   license "Apache-2.0"
 
   on_macos do
