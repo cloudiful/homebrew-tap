@@ -1,0 +1,24 @@
+name: Test tap
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  brew:
+    strategy:
+      matrix:
+        os: [macos-14, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Audit
+        run: brew audit --strict Formula/phasegent.rb
+      - name: Install and test
+        run: |
+          brew install --build-from-source Formula/phasegent.rb
+          brew test Formula/phasegent.rb
+          brew livecheck Formula/phasegent.rb || true
