@@ -5,19 +5,19 @@ class Phasegent < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cloudiful/phasegent/releases/download/v2.22.1/phasegent-v2.22.1-aarch64-apple-darwin"
-      sha256 "71dae45c205514ea1203cffee21f3b751eca76bc50074c154e265a7b110f8338"
+      url "https://github.com/cloudiful/phasegent/releases/download/v2.23.0/phasegent-v2.23.0-aarch64-apple-darwin"
+      sha256 "f029c6a5396126be9dfe39c0bfb230e10b068edf97e197e685df3236130692cc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cloudiful/phasegent/releases/download/v2.22.1/phasegent-v2.22.1-aarch64-unknown-linux-gnu"
-      sha256 "4af5717d8f62a5b92be173794190c71f26092d24dd6c310493037b003fe041a2"
+      url "https://github.com/cloudiful/phasegent/releases/download/v2.23.0/phasegent-v2.23.0-aarch64-unknown-linux-gnu"
+      sha256 "49171383b362ff7790ce1c6c76fc545082acad4006c1b146f9ad2ea3da076e77"
     end
     on_intel do
-      url "https://github.com/cloudiful/phasegent/releases/download/v2.22.1/phasegent-v2.22.1-x86_64-unknown-linux-gnu"
-      sha256 "fea66c750d8db329b30ac8f704e30c346f6db1849d75fc82c7f9d40463c6c1f5"
+      url "https://github.com/cloudiful/phasegent/releases/download/v2.23.0/phasegent-v2.23.0-x86_64-unknown-linux-gnu"
+      sha256 "f642d0ee36007cae5295c179c0d0fbbeb757f5cc0d8bc05b060c48e2fbf2cd71"
     end
   end
 
