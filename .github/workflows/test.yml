@@ -16,9 +16,11 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
       - name: Audit
-        run: brew audit --strict cloudiful/tap/phasegent
+        run: brew audit --strict cloudiful/tap/phasegent cloudiful/tap/git-ai-commit
       - name: Install and test
         run: |
-          brew install --build-from-source cloudiful/tap/phasegent
+          brew install --build-from-source cloudiful/tap/phasegent cloudiful/tap/git-ai-commit
           brew test cloudiful/tap/phasegent
+          brew test cloudiful/tap/git-ai-commit
           brew livecheck cloudiful/tap/phasegent || true
+          brew livecheck cloudiful/tap/git-ai-commit || true
