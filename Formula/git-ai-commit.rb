@@ -1,7 +1,6 @@
 class GitAiCommit < Formula
   desc "AI-generated Git commit messages from staged changes"
   homepage "https://github.com/cloudiful/git-ai-commit"
-  version "0.1.18"
   license "Apache-2.0"
 
   on_macos do
