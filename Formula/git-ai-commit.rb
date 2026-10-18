@@ -1,24 +1,24 @@
 class GitAiCommit < Formula
   desc "AI-generated Git commit messages from staged changes"
   homepage "https://github.com/cloudiful/git-ai-commit"
-  version "0.1.17"
+  version "0.1.18"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/cloudiful/git-ai-commit/releases/download/v0.1.17/git-ai-commit-macos-arm64"
-      sha256 "bb23e5f1001c264552a734d2761e6742c6f5eec5a9536d5bff5827a9410a3c12"
+      url "https://github.com/cloudiful/git-ai-commit/releases/download/v0.1.18/git-ai-commit-macos-arm64"
+      sha256 "6d8152f0faed7c6b49c42fbcf3e68842f944966c37b8dd4e8aa5e584bbb16df2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cloudiful/git-ai-commit/releases/download/v0.1.17/git-ai-commit-linux-arm64"
-      sha256 "ebfb27e1b904e6366ba92c00a318f23e077fd2bd849e3c9e3dcc4eb2a848e3f4"
+      url "https://github.com/cloudiful/git-ai-commit/releases/download/v0.1.18/git-ai-commit-linux-arm64"
+      sha256 "ac78acd6eee8f971aae5a2fa92652fdaaf271c18243eebe309e364af9b52fc7c"
     end
     on_intel do
-      url "https://github.com/cloudiful/git-ai-commit/releases/download/v0.1.17/git-ai-commit-linux-amd64"
-      sha256 "0169c01eaae1f306ca7d52c20e358853d99d9c8208f70fce6475696aaa248f63"
+      url "https://github.com/cloudiful/git-ai-commit/releases/download/v0.1.18/git-ai-commit-linux-amd64"
+      sha256 "a17608b758e7f561adc3303d4b8e611d66c4e5e1e77febf5d213311b5dab943d"
     end
   end
 
