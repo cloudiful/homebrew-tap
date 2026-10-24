@@ -8,19 +8,39 @@ on:
 jobs:
   brew:
     strategy:
+      fail-fast: false
       matrix:
-        os: [macos-14, ubuntu-latest]
+        include:
+          - formula: phasegent
+            os: macos-14
+          - formula: phasegent
+            os: ubuntu-latest
+          - formula: git-ai-commit
+            os: macos-14
+          - formula: git-ai-commit
+            os: ubuntu-latest
+          - formula: fj
+            os: macos-14
+          - formula: fj
+            os: ubuntu-24.04
+          - formula: fj
+            os: ubuntu-24.04-arm
     runs-on: ${{ matrix.os }}
+    env:
+      FORMULA: ${{ matrix.formula }}
     steps:
       - uses: actions/checkout@v7
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@main
       - name: Audit
-        run: brew audit --strict cloudiful/tap/phasegent cloudiful/tap/git-ai-commit
+        run: brew audit --strict "cloudiful/tap/$FORMULA"
       - name: Install and test
         run: |
-          brew install --build-from-source cloudiful/tap/phasegent cloudiful/tap/git-ai-commit
-          brew test cloudiful/tap/phasegent
-          brew test cloudiful/tap/git-ai-commit
-          brew livecheck cloudiful/tap/phasegent || true
-          brew livecheck cloudiful/tap/git-ai-commit || true
+          brew install --build-from-source "cloudiful/tap/$FORMULA"
+          brew test "cloudiful/tap/$FORMULA"
+      - name: Livecheck
+        if: matrix.formula == 'fj'
+        run: brew livecheck "cloudiful/tap/$FORMULA"
+      - name: Livecheck (advisory)
+        if: matrix.formula != 'fj'
+        run: brew livecheck "cloudiful/tap/$FORMULA" || true
