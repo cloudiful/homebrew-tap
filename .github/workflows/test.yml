@@ -19,6 +19,12 @@ jobs:
             os: macos-14
           - formula: git-ai-commit
             os: ubuntu-latest
+          - formula: prompt-ferry
+            os: macos-14
+          - formula: prompt-ferry
+            os: ubuntu-24.04
+          - formula: prompt-ferry
+            os: ubuntu-24.04-arm
           - formula: fj
             os: macos-14
           - formula: fj
