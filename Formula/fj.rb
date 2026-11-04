@@ -1,26 +1,26 @@
 class Fj < Formula
   desc "Command-line interface for Forgejo (cloudiful fork)"
   homepage "https://github.com/cloudiful/forgejo-cli"
-  version "0.7.0-cloudiful.5"
+  version "0.7.0-cloudiful.6"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     depends_on arch: :arm64
 
-    url "https://github.com/cloudiful/forgejo-cli/releases/download/v0.7.0-cloudiful.5/forgejo-cli-aarch64-macos.tar.gz"
-    sha256 "8fdea931e53bdda513a69a2ebe2b47c5f7a7091bc5869698aba5571b29a2eced"
+    url "https://github.com/cloudiful/forgejo-cli/releases/download/v0.7.0-cloudiful.6/forgejo-cli-aarch64-macos.tar.gz"
+    sha256 "0eebae9d0126c8c17e8d18b111bb55d03d7d567d2b900a4ef065347556d8ba1a"
     depends_on "openssl@3"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cloudiful/forgejo-cli/releases/download/v0.7.0-cloudiful.5/forgejo-cli-x86_64-linux.tar.gz"
-      sha256 "229d6265581ff8adf5c42b261c9d8f20ffbf57c6c0378d8f516983d51d13a8d3"
+      url "https://github.com/cloudiful/forgejo-cli/releases/download/v0.7.0-cloudiful.6/forgejo-cli-x86_64-linux.tar.gz"
+      sha256 "bf33f476596b1c60ff0550aa5422d31df3af34746e5773e3546b9f96f780936a"
     end
 
     on_arm do
-      url "https://github.com/cloudiful/forgejo-cli/releases/download/v0.7.0-cloudiful.5/forgejo-cli-aarch64-linux.tar.gz"
-      sha256 "553ede5f468ef3099f33ea955eedb131a6f91f31987c535c789deaca7562fd06"
+      url "https://github.com/cloudiful/forgejo-cli/releases/download/v0.7.0-cloudiful.6/forgejo-cli-aarch64-linux.tar.gz"
+      sha256 "f36364d14182e8042e6bd907c684dbeebecfce8cfdd9dfed6481417f111f1795"
     end
   end
 
