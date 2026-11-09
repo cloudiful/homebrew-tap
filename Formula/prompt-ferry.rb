@@ -7,19 +7,19 @@ class PromptFerry < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.32/prompt-ferry-v1.42.32-aarch64-apple-darwin"
-      sha256 "f95bb99ab1dc7e28aec28103149edf49e68fa9646d0b96c516253805a2fa23e0"
+      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.34/prompt-ferry-v1.42.34-aarch64-apple-darwin"
+      sha256 "f318144c9fff0731d53792e950953cd1d4dd280b6e0cacef8bfbd0f0371b433e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.32/prompt-ferry-v1.42.32-aarch64-unknown-linux-gnu"
-      sha256 "51879dcb10089e97112f7785feee8de9a9fcfa7e4e821a2e3cf4a5ab7ed1d8c6"
+      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.34/prompt-ferry-v1.42.34-aarch64-unknown-linux-gnu"
+      sha256 "0874db1dd968c481544e835ed896302f7bcb730c5192eaee809112ca15c08299"
     end
     on_intel do
-      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.32/prompt-ferry-v1.42.32-x86_64-unknown-linux-gnu"
-      sha256 "29452eef9d65086bdd9a5a68f917360b0c80c2fb17f2e2e0ba7012cf50410fcc"
+      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.34/prompt-ferry-v1.42.34-x86_64-unknown-linux-gnu"
+      sha256 "0d808867451517e182479ade11a4158c0459ae024da3e246913a49b41caa8d17"
     end
   end
 
