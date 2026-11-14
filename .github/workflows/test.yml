@@ -12,15 +12,15 @@ jobs:
       matrix:
         include:
           - formula: phasegent
-            os: macos-14
+            os: macos-latest
           - formula: phasegent
-            os: ubuntu-latest
+            os: ubuntu-24.04
           - formula: git-ai-commit
-            os: macos-14
+            os: macos-latest
           - formula: git-ai-commit
-            os: ubuntu-latest
+            os: ubuntu-24.04
           - formula: fj
-            os: macos-14
+            os: macos-latest
           - formula: fj
             os: ubuntu-24.04
           - formula: fj
