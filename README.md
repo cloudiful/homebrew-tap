@@ -35,7 +35,7 @@ brew upgrade cloudiful/tap/fj
 | Formula | Platform | Support |
 | --- | --- | --- |
 | phasegent | macOS ARM64 (Apple Silicon) | Supported |
-| phasegent | Linux x86_64, Linux ARM64 | Supported |
+| phasegent | Linux x86_64 | Supported; statically linked musl binary |
 | phasegent | Intel Mac | Not supported; no Intel build is published |
 | git-ai-commit | macOS ARM64 (Apple Silicon) | Supported |
 | git-ai-commit | Linux x86_64, Linux ARM64 | Supported |
