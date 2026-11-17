@@ -5,15 +5,15 @@ class Phasegent < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cloudiful/phasegent/releases/download/v2.32.11/phasegent-v2.32.11-aarch64-apple-darwin"
-      sha256 "d0e98f10eeb0c42d571966b98992e1b794cc6d919543a378200767682813a573"
+      url "https://github.com/cloudiful/phasegent/releases/download/v2.33.0/phasegent-v2.33.0-aarch64-apple-darwin"
+      sha256 "e3b8352ab901fe49c926630f1eb4a33a018f7b3af353f70b43f87e2ae51233a3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cloudiful/phasegent/releases/download/v2.32.11/phasegent-v2.32.11-x86_64-unknown-linux-musl"
-      sha256 "9b45c81d9a714b41bb9bacb916f18c614ce2e6f1df26ae2dd99057e2f40579df"
+      url "https://github.com/cloudiful/phasegent/releases/download/v2.33.0/phasegent-v2.33.0-x86_64-unknown-linux-musl"
+      sha256 "1fc82f3ed4341abb2764b54a0342ce3b8e4f9e460f20816204bb398d5490ea09"
     end
   end
 
