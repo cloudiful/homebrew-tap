@@ -1,5 +1,5 @@
 class PromptFerry < Formula
-  desc "OpenAI-compatible relay and worker for upstream ferrying"
+  desc "OpenAI-compatible AI gateway with peer-connected nodes"
   homepage "https://github.com/cloudiful/prompt-ferry"
   license "Apache-2.0"
 
@@ -7,19 +7,19 @@ class PromptFerry < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.34/prompt-ferry-v1.42.34-aarch64-apple-darwin"
-      sha256 "f318144c9fff0731d53792e950953cd1d4dd280b6e0cacef8bfbd0f0371b433e"
+      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.44.0/prompt-ferry-v1.44.0-aarch64-apple-darwin"
+      sha256 "791a2a7d37d1135d61b4251b6cf347be57d1605c411d9b2092c3d011cb70e563"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.34/prompt-ferry-v1.42.34-aarch64-unknown-linux-gnu"
-      sha256 "0874db1dd968c481544e835ed896302f7bcb730c5192eaee809112ca15c08299"
+      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.44.0/prompt-ferry-v1.44.0-aarch64-unknown-linux-gnu"
+      sha256 "db86a5ed1fba0942a5123e559ad31f78df69bc5a44beb15cb667b8ebeb2acf64"
     end
     on_intel do
-      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.42.34/prompt-ferry-v1.42.34-x86_64-unknown-linux-gnu"
-      sha256 "0d808867451517e182479ade11a4158c0459ae024da3e246913a49b41caa8d17"
+      url "https://github.com/cloudiful/prompt-ferry/releases/download/v1.44.0/prompt-ferry-v1.44.0-x86_64-unknown-linux-gnu"
+      sha256 "0b60c25e9f2bc9aaff35b3b0bcf3bcae945549500d41cf077dcd0628c1ae6299"
     end
   end
 
